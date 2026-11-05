@@ -1,6 +1,8 @@
 # Universal Update Lock
 
-Temporarily pause standard WordPress core, plugin, theme, and translation updates. Deactivate the plugin to restore normal WordPress update behavior.
+Universal Update Lock temporarily pauses WordPress's standard update mechanisms while you work on a controlled site configuration. It can be useful during local development, staging work, or troubleshooting where an update would change the environment you are trying to reproduce.
+
+Activation suppresses standard checks, automatic updates, usual manual-upgrader actions, and update notices across core, plugins, themes, and translations. Deactivation restores the normal WordPress behavior and clears update transients for fresh checks. The limits below explain which custom updaters and external changes remain outside its control; it is not intended as a permanent update policy for a public production site.
 
 ## Install
 
